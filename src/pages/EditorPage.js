@@ -96,11 +96,18 @@ const EditorPage = () => {
             <div className="aside">
                 <div className="asideInner">
                     <div className="logo">
-                        <img
-                            className="logoImage"
-                            src="/code-sync.png"
-                            alt="logo"
-                        />
+                                <img
+    className="homePageLogo"
+    src="/logo.png"
+    alt="code-sync-logo"
+    style={{
+        borderRadius: '50%',
+        width: '80px',
+        height: '80px',
+        objectFit: 'cover',
+        boxShadow: '0 2px 16px rgba(0,0,0,0.15)',
+        marginBottom: '30px'
+    }} />
                     </div>
                     <h3>Connected</h3>
                     <div className="clientsList">

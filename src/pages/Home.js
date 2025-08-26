@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+// import './Home.css';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -38,10 +39,17 @@ const Home = () => {
         <div className="homePageWrapper">
             <div className="formWrapper">
                 <img
-                    className="homePageLogo"
-                    src="/code-sync.png"
-                    alt="code-sync-logo"
-                />
+    className="homePageLogo"
+    src="/logo.png"
+    alt="code-sync-logo"
+    style={{
+        borderRadius: '50%',
+        width: '80px',
+        height: '80px',
+        objectFit: 'cover',
+        boxShadow: '0 2px 16px rgba(0,0,0,0.15)',
+        marginBottom: '30px'
+    }} />
                 <h4 className="mainLabel">Paste invitation ROOM ID</h4>
                 <div className="inputGroup">
                     <input
@@ -86,3 +94,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
